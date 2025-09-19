@@ -8,9 +8,9 @@
 # streamlit - frontend e backend
 
 import streamlit as st
-from openai import OpenAI
+#from openai import OpenAI
 
-modelo = OpenAI(api_key="")
+#modelo = OpenAI(api_key="")
 
 st.write("### ChatBot com IA") # markdown
 
@@ -37,12 +37,12 @@ if mensagem_usuario:
     st.session_state["lista_mensagens"].append(mensagem)
 
     # resposta da IA
-    resposta_modelo = modelo.chat.completions.create(
-        messages=st.session_state["lista_mensagens"],
-        model="gpt-4o"
-    )
-    resposta_ia = resposta_modelo.choices[0].message.content
+    #resposta_modelo = modelo.chat.completions.create(
+        #messages=st.session_state["lista_mensagens"],
+        #model="gpt-4o"
+    #)
+    #resposta_ia = resposta_modelo.choices[0].message.content
     # exibir a resposta da IA na tela
-    st.chat_message("assistant").write(resposta_ia)
-    mensagem_ia = {"role": "assistant", "content": resposta_ia}
-    st.session_state["lista_mensagens"].append(mensagem_ia)
+    #st.chat_message("assistant").write(resposta_ia)
+    #mensagem_ia = {"role": "assistant", "content": resposta_ia}
+    #st.session_state["lista_mensagens"].append(mensagem_ia)
