@@ -15,7 +15,7 @@ msg_usuario = st.chat_input("Escreva sua mensagem aqui")
 
 if msg_usuario:
   print(msg_usuario)
-  st.chat_message("Daniel").write(msg_usuario)
+  st.chat_message("user").write(msg_usuario)
 
   msg_ia = "Você quis dizer:" + msg_usuario +"?"
 
