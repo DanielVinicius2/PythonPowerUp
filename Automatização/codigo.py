@@ -28,7 +28,7 @@ pyautogui.write("futebol3")
 pyautogui.press("tab")
 pyautogui.press("enter")
 #3 Importar a base de dados
-time.sleep(5)
+time.sleep(3)
 
 tabela = pd.read_csv("produtos.csv")
 
